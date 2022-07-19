@@ -9,7 +9,7 @@ const UsersList = (props) => {
       {/* <p>{props.users[0].name}</p> */}
       <ul>
         {props.users.map((user) => (
-          <li key={Math.random().toString()}>
+          <li key={user.id}>
             {user.name} ({user.age} years old)
           </li>
         ))}
